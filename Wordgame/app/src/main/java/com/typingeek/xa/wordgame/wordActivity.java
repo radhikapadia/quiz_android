@@ -47,7 +47,7 @@ public class wordActivity extends AppCompatActivity {
         mnxtButton.setEnabled(false);
         mchances_val = 7;
         mregex_str = "aeiou";
-        mwordView = mword.replaceAll( "[^"+mregex_str+"]", "?" );
+        mwordView = mword.replaceAll( "[^"+mregex_str+"]", "* " );
         mWord_tview.setText(mwordView);
         mscoreVal = 0;
 
